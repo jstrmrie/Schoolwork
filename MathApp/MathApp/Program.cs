@@ -7,8 +7,8 @@ namespace MathApp
         static void Main(string[] args)
         {
             Console.Write("┌─────────────────────────────────────────────────────┐" +
-                          "\n│                 COMPUTE AVERAGE APP                 │" +
-                          "\n└─────────────────────────────────────────────────────┘" +
+                        "\n│                      MATH APP                       │" +
+                        "\n└─────────────────────────────────────────────────────┘" +
             "\nChoose a Math Class method: " +
             "\n [1] MIN/MAX " +
             "\n [2] SQRT " +
