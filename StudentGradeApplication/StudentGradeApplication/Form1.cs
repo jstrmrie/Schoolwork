@@ -33,16 +33,7 @@ namespace StudentGradeApplication
 
             double average = (english + math + science + filipino + history) / 5;
 
-            string status;
-
-            if (average >= 75)
-            {
-                status = "passed";
-            }
-            else
-            {
-                status = "failed";
-            }
+            string status = (average >= 75.00) ? "passed" : "failed";
 
             lbl_message.Text = "The student " + status + "."
                 + "\nThe general average of student " + tb_name.Text + " is " + average + "." ;
