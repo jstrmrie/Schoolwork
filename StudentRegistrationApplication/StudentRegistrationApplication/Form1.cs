@@ -60,7 +60,7 @@ namespace StudentRegistrationApplication
             }
 
             MessageBox.Show("Student name: " + name +
-                "\nGenders: " + gender +
+                "\nGenderss: " + gender +
                 "\nDate of birth: " + cbboxDay.SelectedItem + "/" + cbboxMonth.SelectedItem + "/" + cbboxYear.SelectedItem);
         }
     }

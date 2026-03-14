@@ -230,7 +230,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblLastName;
+         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.TextBox tbLastName;
         private System.Windows.Forms.Label lblFirstName;
