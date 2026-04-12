@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace StudentRegistrationApplication
 {
-    public partial class Form1 : Form
+    public partial class frmStudentRegistration : Form
     {
-        public Form1()
+        public frmStudentRegistration()
         {
             InitializeComponent();
             ListComboBoxes();
@@ -52,24 +52,27 @@ namespace StudentRegistrationApplication
 
         private void DisplayInfo(string name)
         {
-            MessageBox.Show("Student name: " + name +
-                "Student Info");
+            MessageBox.Show(
+                "Student Info:" +
+                "\nStudent name: " + name );
         }
 
         private void DisplayInfo(string name, string gender)
         {
-            MessageBox.Show("Student name: " + name +
-                "\nGender: " + gender +
-                "Student Info");
+            MessageBox.Show(
+                "Student Info:" +
+                "\nStudent name: " + name +
+                "\nGender: " + gender);
         }
 
         private void DisplayInfo(string name, string gender, string dob, string program)
         {
-            MessageBox.Show("Student name: " + name +
+            MessageBox.Show(
+                "Student Info:" +
+                "\nStudent name: " + name +
                 "\nGender: " + gender +
                 "\nDate of birth: " + dob +
-                "\nProgram: " + program +
-                "Student Info");
+                "\nProgram: " + program);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -114,7 +117,7 @@ namespace StudentRegistrationApplication
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                picture_profile.Image = System.Drawing.Image.FromFile(ofd.FileName);
+                picture_profile.BackgroundImage = System.Drawing.Image.FromFile(ofd.FileName);
             }
         }
     }

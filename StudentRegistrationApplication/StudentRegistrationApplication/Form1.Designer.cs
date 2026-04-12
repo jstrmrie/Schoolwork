@@ -1,6 +1,6 @@
 ﻿namespace StudentRegistrationApplication
 {
-    partial class Form1
+    partial class frmStudentRegistration
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,7 @@
             this.picture_profile = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnBrowse = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture_profile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             this.tbLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLastName.Location = new System.Drawing.Point(12, 75);
             this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(317, 26);
+            this.tbLastName.Size = new System.Drawing.Size(358, 26);
             this.tbLastName.TabIndex = 0;
             // 
             // label1
@@ -82,7 +83,7 @@
             this.tbFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFirstName.Location = new System.Drawing.Point(12, 134);
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(317, 26);
+            this.tbFirstName.Size = new System.Drawing.Size(358, 26);
             this.tbFirstName.TabIndex = 2;
             // 
             // label3
@@ -100,7 +101,7 @@
             this.tbMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMiddleName.Location = new System.Drawing.Point(12, 197);
             this.tbMiddleName.Name = "tbMiddleName";
-            this.tbMiddleName.Size = new System.Drawing.Size(317, 26);
+            this.tbMiddleName.Size = new System.Drawing.Size(358, 26);
             this.tbMiddleName.TabIndex = 4;
             // 
             // rdbtnMale
@@ -141,7 +142,7 @@
             // 
             this.cbboxDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbboxDay.FormattingEnabled = true;
-            this.cbboxDay.Location = new System.Drawing.Point(12, 256);
+            this.cbboxDay.Location = new System.Drawing.Point(12, 284);
             this.cbboxDay.Name = "cbboxDay";
             this.cbboxDay.Size = new System.Drawing.Size(85, 28);
             this.cbboxDay.TabIndex = 9;
@@ -151,7 +152,7 @@
             // 
             this.cbboxMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbboxMonth.FormattingEnabled = true;
-            this.cbboxMonth.Location = new System.Drawing.Point(103, 256);
+            this.cbboxMonth.Location = new System.Drawing.Point(103, 284);
             this.cbboxMonth.Name = "cbboxMonth";
             this.cbboxMonth.Size = new System.Drawing.Size(110, 28);
             this.cbboxMonth.TabIndex = 10;
@@ -161,7 +162,7 @@
             // 
             this.cbboxYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbboxYear.FormattingEnabled = true;
-            this.cbboxYear.Location = new System.Drawing.Point(219, 256);
+            this.cbboxYear.Location = new System.Drawing.Point(219, 284);
             this.cbboxYear.Name = "cbboxYear";
             this.cbboxYear.Size = new System.Drawing.Size(110, 28);
             this.cbboxYear.TabIndex = 11;
@@ -171,7 +172,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 298);
+            this.label5.Location = new System.Drawing.Point(12, 322);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 20);
             this.label5.TabIndex = 12;
@@ -181,9 +182,9 @@
             // 
             this.cbboxProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbboxProgram.FormattingEnabled = true;
-            this.cbboxProgram.Location = new System.Drawing.Point(12, 321);
+            this.cbboxProgram.Location = new System.Drawing.Point(12, 345);
             this.cbboxProgram.Name = "cbboxProgram";
-            this.cbboxProgram.Size = new System.Drawing.Size(317, 28);
+            this.cbboxProgram.Size = new System.Drawing.Size(358, 28);
             this.cbboxProgram.TabIndex = 13;
             this.cbboxProgram.Text = "-Select Program-";
             // 
@@ -193,7 +194,7 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(12, 355);
+            this.btnRegister.Location = new System.Drawing.Point(12, 379);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(173, 34);
             this.btnRegister.TabIndex = 14;
@@ -204,8 +205,9 @@
             // picture_profile
             // 
             this.picture_profile.BackColor = System.Drawing.Color.LightGray;
+            this.picture_profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picture_profile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture_profile.Location = new System.Drawing.Point(349, 52);
+            this.picture_profile.Location = new System.Drawing.Point(397, 52);
             this.picture_profile.Name = "picture_profile";
             this.picture_profile.Size = new System.Drawing.Size(180, 180);
             this.picture_profile.TabIndex = 15;
@@ -226,7 +228,7 @@
             this.btnBrowse.BackColor = System.Drawing.Color.LightGray;
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowse.Location = new System.Drawing.Point(396, 238);
+            this.btnBrowse.Location = new System.Drawing.Point(444, 238);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(82, 29);
             this.btnBrowse.TabIndex = 17;
@@ -234,11 +236,23 @@
             this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // Form1
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 261);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 20);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Date of birth*";
+            // 
+            // frmStudentRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(589, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.picture_profile);
@@ -257,8 +271,8 @@
             this.Controls.Add(this.tbFirstName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbLastName);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmStudentRegistration";
+            this.Text = "Student Registration Application";
             ((System.ComponentModel.ISupportInitialize)(this.picture_profile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -285,6 +299,7 @@
         private System.Windows.Forms.PictureBox picture_profile;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Label label7;
     }
 }
 
