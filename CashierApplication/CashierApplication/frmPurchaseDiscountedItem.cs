@@ -16,5 +16,6 @@ namespace CashierApplication
         {
             InitializeComponent();
         }
+
     }
 }
