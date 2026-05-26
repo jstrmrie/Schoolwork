@@ -39,5 +39,19 @@ namespace CashierApplication
             double change = discountedItem.getChange();
             lblChange.Text = change.ToString("F2");
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLoginAccount loginForm = new frmLoginAccount();
+            loginForm.Show();
+
+            this.Close();
+        }
+
+        private void exitAplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
